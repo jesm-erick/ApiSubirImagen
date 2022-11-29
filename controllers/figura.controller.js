@@ -6,6 +6,7 @@ export const getFiguras = async (req, res) => {
     try {
         const figuras = await Figuras.find();
         res.json(figuras)
+        
     } catch (error) {
         return res.status(500).json({
             message: error.message

@@ -13,8 +13,7 @@ router.get('/figura', getFiguras)
 
 router.get('/figura/:id', getFigura)
 
-router.post('/figura', fileUpload({useTempFiles :
-true, tempFileDir : './uploads'}), createFiguras)
+router.post('/figura', fileUpload({useTempFiles :true, tempFileDir : './uploads'}), createFiguras)
 
 router.put('/figura/:id', updateFiguras)
 

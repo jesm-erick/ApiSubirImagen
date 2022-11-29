@@ -3,7 +3,7 @@ import {connectToDB} from './utils/mongoose.js'
 
 async function  main() {
     await connectToDB()
-    app.listen(3000)
+    app.listen(3000, '192.168.229.33')
     console.log('server is running on port', 3000)
 }
 main()

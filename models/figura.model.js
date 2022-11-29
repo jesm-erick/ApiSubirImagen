@@ -1,6 +1,7 @@
 import mongoose from "mongoose"
 
 const figuraSchema = mongoose.Schema({
+
     name: {
         type: String,
         required: true,
