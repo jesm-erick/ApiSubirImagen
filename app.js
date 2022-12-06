@@ -2,7 +2,6 @@ import express from 'express'
 import morgan from 'morgan'
 
 
-
 import indexRoutes from './routes/index.route.js'
 import figuraRoutes from './routes/figura.route.js'
 

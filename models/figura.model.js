@@ -8,11 +8,19 @@ const figuraSchema = mongoose.Schema({
         trim: true,
         unique: true
     },
-    image: {
-        public_id: String,
-        secure_url: String
-    }
-   
+    name1: {
+        type: String,
+        required: true,
+        trim: true,
+        unique: true
+    },
+    winner: {
+        type: String,
+        required: true,
+        trim: true,
+        unique: true
+    },
+
     
 }, {
     timestamps: true

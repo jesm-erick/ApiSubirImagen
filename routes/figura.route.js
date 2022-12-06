@@ -1,22 +1,22 @@
 import { Router } from "express"
 import {
     getFiguras,
-    getFigura,
+    // getFigura,
     createFiguras,
-    deleteFiguras,
-    updateFiguras
+    // deleteFiguras,
+    // updateFiguras
 } from '../controllers/figura.controller.js'
 const router = Router()
 import fileUpload from 'express-fileupload'
 
-router.get('/figura', getFiguras)
+router.get('/juego', getFiguras)
 
-router.get('/figura/:id', getFigura)
+// router.get('/figura/:id', getFigura)
 
-router.post('/figura', fileUpload({useTempFiles :true, tempFileDir : './uploads'}), createFiguras)
+router.post('/juego', createFiguras)
 
-router.put('/figura/:id', updateFiguras)
+// router.put('/figura/:id', updateFiguras)
 
-router.delete('/figura/:id', deleteFiguras)
+// router.delete('/figura/:id', deleteFiguras)
 
 export default router
